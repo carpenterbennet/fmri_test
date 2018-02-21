@@ -2,7 +2,6 @@
 
 cd ~/Projects/ds008
 
-echo "=========================================================="
 # for each bold file in the dataset
 for bold_file in $(find sub??? -name bold.nii.gz) ; do
 
@@ -27,5 +26,6 @@ for bold_file in $(find sub??? -name bold.nii.gz) ; do
     echo "Original pixdims"
     echo $dims
     echo "Corrected pixdims: $pixdims"
+    printf "\n\n"
 done
 
